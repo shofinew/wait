@@ -1,0 +1,107 @@
+/* Reset & base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Topbar */
+.topbar_container {
+  background-color: #222;
+  padding: 0.5rem 1rem;
+  overflow-x: auto;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.topbar > div {
+  padding: 0.5rem 1rem;
+}
+
+/* Tab Bar - horizontal scroll support */
+.tabbar_container {
+  background-color: #444;
+  overflow-x: auto;
+}
+
+.tab_bar {
+  display: flex;
+  flex-wrap: nowrap;  /* Prevent wrapping */
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0.5rem;
+  min-width: max-content;
+}
+
+.tab_bar > div {
+  flex: 0 0 auto;  /* Prevent shrinking */
+  color: #fff;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+.tab_bar > div:hover {
+  background-color: #666;
+}
+
+.tab_bar .active {
+  background-color: #ec8787;
+  color: #fff;
+}
+
+/* Main Content */
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.main_container > div {
+  flex: 1 1 300px;
+  min-height: 100px;
+  background-color: #fff;
+  margin: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Optional: Hide scrollbar for clean look */
+.tabbar_container::-webkit-scrollbar {
+  display: none;
+}
+.tabbar_container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
