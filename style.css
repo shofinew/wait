@@ -114,4 +114,16 @@ h1 {
 }
 
 
-/* this is accordion  */
+.stage1_content{
+  padding: 1rem;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+.btn{
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
