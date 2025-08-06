@@ -67,7 +67,7 @@ h1 {
 }
 
 .tab_bar .active {
-  background-color: #ec8787;
+  background-color: #0f0;
   color: #fff;
 }
 
@@ -112,3 +112,6 @@ h1 {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+
+/* this is accordion  */

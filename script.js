@@ -40,3 +40,5 @@ tabs.forEach((tab, index) => {
 contents.forEach((content, i) => {
   content.style.display = i === 0 ? 'block' : 'none';
 });
+
+// this is acordion 
