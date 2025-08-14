@@ -42,3 +42,16 @@ contents.forEach((content, i) => {
 });
 
 // this is acordion 
+
+// === Modal FUNCTIONALITY === //
+const addBtn = document.getElementById('addScheduleBtn');
+  const popup = document.getElementById('popup');
+  const closePopup = document.getElementById('closePopup');
+
+  addBtn.addEventListener('click', () => {
+    popup.style.display = 'flex';
+  });
+
+  closePopup.addEventListener('click', () => {
+    popup.style.display = 'none';
+  });

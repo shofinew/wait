@@ -29,6 +29,8 @@
                   <div class="profile">Profile</div>
             </div>
       </div>
+      <!-- this is modal -->
+       
       <main class="main_container">
             <div class="home_show">
                   
@@ -61,39 +63,53 @@
 
             <div class="stage1_show">
                   <div class="stage1_content">
-                        <h2>Stage 1</h2>
-                        <p>Content for Stage 1 goes here.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae ullam dignissimos quibusdam dolorem quasi tempora delectus rem aliquid, eius ratione earum dolor est, porro molestias, sit doloremque quia. </p>
+                        
+                       <h3>Stage1 Schedule Review</h3>
+                              <hr><br>
+                              <input type="text" id="scheduleDescription" placeholder="Schedule Description"><br><br>
+                              from: <input type="time" id="fromTime">
+                              to: <input type="time" id="toTime"><br><br>
+                              date: <input type="date" id="date"><br><br>
 
                               <button class="btn">Confirm</button>
-                              <button class="btn">Edit</button>
+                              <button class="btn" inactive>Edit</button>
                               <button class="btn">Delete</button>
                   </div>
-                  <div class="stage1_content">
-                        <h2>Stage 1</h2>
-                        <p>Content for Stage 1 goes here.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae ullam dignissimos quibusdam dolorem quasi tempora delectus rem aliquid, eius ratione earum dolor est, porro molestias, sit doloremque quia.</p>
-
-                              <button class="btn">Confirm</button>
-                              <button class="btn">Edit</button>
-                              <button class="btn">Delete</button>
-                  </div>
-                  <div class="stage1_content">
-                        <h2>Stage 1</h2>
-                        <p>Content for Stage 1 goes here.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae ullam dignissimos quibusdam dolorem quasi tempora delectus rem aliquid, eius ratione earum dolor est, porro molestias, sit doloremque quia..</p>
-
-                              <button class="btn">Confirm</button>
-                              <button class="btn">Edit</button>
-                              <button class="btn">Delete</button>
-                  </div>
+                 
 
                   
             </div>
             <div class="search_show">
                   <h2>Search</h2>
-                  <input type="search">
                   <p>Search functionality goes here.</p>
+                  <input type="search">
+                  <div id="search_results">
+                        <div id="result1"> 
+                              <span>John Doe</span>
+                              
+                              <p>I am a Doctor, specializing in cardiology.</p>
+                              <button id="addScheduleBtn">Add Schedule</button>
+
+                              <div id="popup" style="display:none;">
+                              <div class="popup-content">
+                              <h3> Schedule add</h3>
+                              <hr><br>
+                              <input type="text" id="scheduleDescription" placeholder="Schedule Description"><br><br>
+                              from: <input type="time" id="fromTime">
+                              to: <input type="time" id="toTime"><br><br>
+                              date: <input type="date" id="date"><br><br>
+                              <button id="btn">Send Stage1</button>
+                              <button id="closePopup">Close</button>
+                              </div>
+                              </div>
+
+                              <button class="btn">View</button>
+                              <button class="btn">Delete</button>
+                        </div>
+
+                        </div>
+                  </div>
+
             </div>
             <div class="profile_show">
                   <h2>Profile</h2>
