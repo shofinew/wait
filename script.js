@@ -55,3 +55,27 @@ const addBtn = document.getElementById('addScheduleBtn');
   closePopup.addEventListener('click', () => {
     popup.style.display = 'none';
   });
+ 
+  // count down timer
+  const btn = document.getElementById("startBtn");
+    const timerDisplay = document.getElementById("timer");
+
+    btn.addEventListener("click", () => {
+      let time = 30 ; // 30 মিনিট = 1800 সেকেন্ড
+      btn.disabled = true;
+
+      const countdown = setInterval(() => {
+        let minutes = Math.floor(time / 60);
+        let seconds = time % 60;
+        timerDisplay.textContent = "Duration: " +
+          String(minutes).padStart(2, "0") + ":" + String(seconds).padStart(2, "0");
+
+        time--;
+
+        if (time < 0) {
+          clearInterval(countdown);
+          timerDisplay.innerHTML = "<h4 class='danger' >Session Complete!</h4>";
+          btn.disabled = false;
+        }
+      }, 1000);
+    });

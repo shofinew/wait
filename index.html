@@ -36,14 +36,17 @@
                   
 
                 <div class="stage1_content">
-                        <span>John Doe</span>
-                        <span>||</span>
-                        <span>Aziz</span>
-                        <div>Duration: 30 minutes</div>
+                  Serial: 001<br><hr>
+                        <div class="name">
+                                    <span>John Doe</span>
+                                    <span>||</span>
+                                    <span>Aziz</span>
+                              </div>  
+                        <div id="timer">Duration: 30 minutes</div>
                         <div>Date: 2023-10-01</div>
                         <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa repudiandae  </p>
 
-                              <button class="btn">Start</button>
+                              <button class="btn" id="startBtn">Start</button>
                               <button class="btn">Cancel</button>
                   </div>
                   
@@ -66,13 +69,19 @@
                         
                        <h3>Stage1 Schedule Review</h3>
                               <hr><br>
-                              <input type="text" id="scheduleDescription" placeholder="Schedule Description"><br><br>
-                              from: <input type="time" id="fromTime">
-                              to: <input type="time" id="toTime"><br><br>
-                              date: <input type="date" id="date"><br><br>
+                              <div class="name">
+                                    <span>John Doe</span>
+                                    <span>||</span>
+                                    <span>Aziz</span>
+                              </div>      
+                             <div id="scheduleDescription">
+                              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aliquid quia numquam voluptatem tempora voluptas.
+                             </div>
+                             <div class="time">30 minutes</div>
+                             <div class="date">2023-10-01</div>
 
                               <button class="btn">Confirm</button>
-                              <button class="btn" inactive>Edit</button>
+                              <!-- <button class="btn" inactive>Edit</button> -->
                               <button class="btn">Delete</button>
                   </div>
                  
@@ -114,11 +123,16 @@
             <div class="profile_show">
                   <h2>Profile</h2>
                   <p>User profile information goes here.</p>
-                  <div class="name">Name: John Doe</div>
+                  <div class="name1">Name: John Doe</div>
                   <div class="phone">Phone: (123) 456-7890</div>
                   <div class="email">Email: john.doe@example.com</div>  
                   <div class="gender">Gender: Male</div>
                   
+
+                  <div class="counter">
+                        <div>Today busy:</div>
+                        <div>Today free:</div>
+                  </div>
             </div>
       </main>
       <div class="bottom_container">
@@ -127,7 +141,7 @@
       </div>
 
       <div class="footer">
-            <p>© 2023 My Website</p>
+            <p>© 2025 My Website</p>
       </div>
 
       <script src="script.js"></script>
